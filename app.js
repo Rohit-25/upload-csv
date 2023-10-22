@@ -2,9 +2,7 @@ const express = require("express");
 const app = express()
 const connectDB = require('./config/db')
 
-
 const port = 6000;
-
 connectDB();
 
 app.get('/', (req, res) => {
